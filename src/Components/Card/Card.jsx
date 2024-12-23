@@ -19,12 +19,13 @@ const Card = ({ counts, rating, category, price, imgSrc, title, desc }) => {
       <div className={styles.countReview}>
         <span style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '5px' }}>
           {rating}
-          <div>
-            <FaStar style={{ color: '#EABE12' }} />
-            <FaStar style={{ color: '#EABE12' }} />
-            <FaStar style={{ color: '#EABE12' }} />
-            <FaStar style={{ color: '#EABE12' }} />
-            <FaStar />
+          <div className={styles.stars}>
+            {[...Array(5)].map((_, i) => (
+              <FaStar
+                key={i}
+                style={{ color: i < Math.floor(rating) ? "#EABE12" : "#ccc" }}
+              />
+            ))}
           </div>
 
         </span>

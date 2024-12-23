@@ -61,9 +61,13 @@ p::-webkit-scrollbar-thumb:hover {
 
 h2 {
   text-align: start;
-  height: 20px;
+  height: 60px;
   font-size: 1rem;
   color: #555;
+}
+
+h4 {
+  margin: 0px;
 }
 
 .priceAndCategory {
@@ -73,7 +77,6 @@ h2 {
 }
 
 .countReview {
-  height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,4 +86,9 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.stars {
+  margin-left: 8px;
+  color: #ffc107;
 }
