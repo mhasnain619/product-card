@@ -1,5 +1,9 @@
+body {
+  background-color: #F3F2EE;
+}
+
 .divContainer {
-  box-shadow: 0 0 20px rgb(216, 212, 212);
+  box-shadow: 0 0 20px rgb(196, 188, 188);
   margin: 8px;
   width: 320px;
   text-align: start;
@@ -58,7 +62,7 @@ p::-webkit-scrollbar-thumb:hover {
 h2 {
   text-align: start;
   height: 20px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #555;
 }
 

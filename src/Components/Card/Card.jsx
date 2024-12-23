@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 import Button from "./Button/Button";
 
 
-const Card = ({ name, counts, rating, category, price, imgSrc, title, desc }) => {
+const Card = ({ counts, rating, category, price, imgSrc, title, desc }) => {
   return (
     <div className={styles.divContainer}>
       <div className={styles.imgDiv}>
@@ -13,24 +13,29 @@ const Card = ({ name, counts, rating, category, price, imgSrc, title, desc }) =>
       </div>
       <h2>{title}</h2>
       <div className={styles.priceAndCategory}>
-        <h3>${price}</h3>
-        <h3>{category}</h3>
+        <h4>${price}</h4>
+        <h4>{category}</h4>
       </div>
       <div className={styles.countReview}>
-        <span style={{ color: '#EABE12' }}>Reviews : {rating}</span>
+        <span style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '5px' }}>
+          {rating}
+          <div>
+            <FaStar style={{ color: '#EABE12' }} />
+            <FaStar style={{ color: '#EABE12' }} />
+            <FaStar style={{ color: '#EABE12' }} />
+            <FaStar style={{ color: '#EABE12' }} />
+            <FaStar />
+          </div>
+
+        </span>
         <h5>Counts : {counts}</h5>
       </div>
-      <div className={styles.buttonDiv}>
-        <div>
-          <FaStar style={{ color: '#EABE12' }} />
-          <FaStar style={{ color: '#EABE12' }} />
-          <FaStar style={{ color: '#EABE12' }} />
-          <FaStar style={{ color: '#EABE12' }} />
-          <FaStar />
-        </div>
-        <Button name='Add to cart' />
-      </div>
+
       <p className="desc">{desc}</p>
+      <div>
+        <Button name='Buy Now' />
+
+      </div>
     </div>
   );
 };
