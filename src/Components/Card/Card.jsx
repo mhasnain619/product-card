@@ -2,9 +2,10 @@ import React from "react";
 import styles from "./Card.module.css";
 import propsType from 'prop-types';
 import { FaStar } from "react-icons/fa";
+import Button from "./Button/Button";
 
 
-const Card = ({ counts, rating, category, price, imgSrc, title, desc }) => {
+const Card = ({ name, counts, rating, category, price, imgSrc, title, desc }) => {
   return (
     <div className={styles.divContainer}>
       <div className={styles.imgDiv}>
@@ -19,11 +20,16 @@ const Card = ({ counts, rating, category, price, imgSrc, title, desc }) => {
         <span style={{ color: '#EABE12' }}>Reviews : {rating}</span>
         <h5>Counts : {counts}</h5>
       </div>
-      <FaStar style={{ color: '#EABE12' }} />
-      <FaStar style={{ color: '#EABE12' }} />
-      <FaStar style={{ color: '#EABE12' }} />
-      <FaStar style={{ color: '#EABE12' }} />
-      <FaStar />
+      <div className={styles.buttonDiv}>
+        <div>
+          <FaStar style={{ color: '#EABE12' }} />
+          <FaStar style={{ color: '#EABE12' }} />
+          <FaStar style={{ color: '#EABE12' }} />
+          <FaStar style={{ color: '#EABE12' }} />
+          <FaStar />
+        </div>
+        <Button name='Add to cart' />
+      </div>
       <p className="desc">{desc}</p>
     </div>
   );

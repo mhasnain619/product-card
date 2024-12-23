@@ -1,25 +1,19 @@
 .divContainer {
-  /* border: 1px solid black; */
-  box-shadow: 0 0 20px grey;
+  box-shadow: 0 0 20px rgb(216, 212, 212);
   margin: 8px;
   width: 320px;
   text-align: start;
   padding: 10px;
   display: inline-block;
   border-radius: 8px;
-  /* Adds slight rounding to the card edges */
   background-color: #fff;
-  /* Ensures a consistent background */
 }
 
 .imgDiv {
   height: 250px;
   width: 200px;
   object-fit: cover;
-  /* overflow: hidden; */
-  /* Ensures content stays within boundaries */
   margin: 0 auto;
-  /* Centers the image div */
 }
 
 img {
@@ -39,50 +33,36 @@ p {
   padding: 5px;
   overflow-y: auto;
   font-size: 0.9rem;
-  /* Adjust font size for readability */
   color: #555;
-  /* Adds subtle contrast for the text */
 }
 
-/* Customize scrollbar for WebKit browsers */
 p::-webkit-scrollbar {
   width: 4px;
-  /* Set the scrollbar width */
   height: 3px;
-  /* Optional: Set the scrollbar height for horizontal scrolling */
 }
 
 p::-webkit-scrollbar-track {
   background: #e0e0e0;
-  /* Scrollbar track color */
   border-radius: 4px;
-  /* Optional: Rounding the corners */
 }
 
 p::-webkit-scrollbar-thumb {
   background: #888;
-  /* Scrollbar thumb color */
   border-radius: 4px;
-  /* Optional: Rounding the corners */
 }
 
 p::-webkit-scrollbar-thumb:hover {
   background: #555;
-  /* Color when hovered */
 }
 
 h2 {
   text-align: start;
   height: 20px;
-  /* overflow-y: auto; */
   font-size: 0.9rem;
-  /* Adjust font size for readability */
   color: #555;
-  /* Adds subtle contrast for the text */
 }
 
 .priceAndCategory {
-  /* height: 40px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,6 +70,12 @@ h2 {
 
 .countReview {
   height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonDiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
